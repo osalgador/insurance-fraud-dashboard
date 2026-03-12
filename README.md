@@ -25,6 +25,7 @@ geographic location
 Visualize key metrics using an interactive Power BI dashboard
 
 Project Structure
+
 insurance-fraud-dashboard
 │
 ├── data
