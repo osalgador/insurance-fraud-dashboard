@@ -1,185 +1,179 @@
-Insurance Fraud Detection Dashboard
-Overview
+# Insurance Fraud Detection Dashboard
 
-This project analyzes insurance claim data to identify patterns associated with fraudulent claims.
-Using Python for data cleaning and exploratory analysis and Power BI for visualization, the dashboard provides insights into claim behavior, fraud rates, and risk indicators.
+## Overview
+This project analyzes **insurance claim data** to identify patterns associated with **fraudulent claims**. Using **Python for data cleaning and exploratory analysis** and **Power BI for visualization**, the dashboard provides insights into claim behavior, fraud rates, and risk indicators.
 
-The goal of this project is to demonstrate data analysis and actuarial insights in the insurance industry.
+The goal of this project is to demonstrate **data analysis and actuarial insights in the insurance industry**.
 
-Objectives
+---
 
-Analyze insurance claims data
+#  Objectives
 
-Identify patterns related to fraudulent claims
+- Analyze insurance claims data
+- Identify patterns related to **fraudulent claims**
+- Explore relationships between:
+  - claim severity
+  - incident type
+  - customer age
+  - geographic location
+- Build an **interactive Power BI dashboard**
 
-Explore relationships between:
+---
 
-claim severity
-
-incident type
-
-customer age
-
-geographic location
-
-Visualize key metrics using an interactive Power BI dashboard
-
-Project Structure
-
+#  Project Structure
 insurance-fraud-dashboard
 │
 ├── data
-│   └── insurance_claims.csv
+│ └── insurance_claims.csv
 │
 ├── scripts
-│   └── lifeinsurance.py
+│ └── lifeinsurance.py
 │
 ├── dashboard
-│   └── insurance_fraud_dashboard.pbix
+│ └── insurance_fraud_dashboard.pbix
 │
 ├── images
-│   └── dashboard_preview.png
+│ └── dashboard_preview.png
 │
 └── README.md
+---
 
-Data Preparation
 
-The dataset was cleaned using Python (Pandas).
+---
+
+#  Data Preparation
+
+The dataset was cleaned using **Python (Pandas)**.
 
 Main preprocessing steps:
 
-Handling missing values
+- Handling missing values
+- Converting categorical variables
+- Transforming binary variables:
+  - `property_damage`
+  - `police_report_available`
+  - `fraud_reported`
+- Creating new analytical variables:
+  - **Fraud Label**
+  - **Age Groups**
+  - **Claim Severity Categories**
 
-Converting categorical variables
+---
 
-Transforming binary variables:
+#  Exploratory Data Analysis
 
-property_damage
+Exploratory analysis was performed using **Python and visualization libraries** to better understand the dataset.
 
-police_report_available
+The analysis included:
 
-fraud_reported
+- Customer age distribution
+- Fraud case distribution
+- Incident severity analysis
+- Claim amount vs fraud status
+- Claims by state
+- Incident type frequency
 
-Creating new analytical variables:
+---
 
-Fraud Label
+#  Dashboard Features
 
-Age Groups
+The **Power BI dashboard** provides interactive insights into insurance claims and fraud detection.
 
-Claim Severity Categories
+## Key Performance Indicators (KPIs)
 
-Exploratory Data Analysis
+- Total Claims
+- Fraud Cases
+- Fraud Rate
+- Total Claim Amount
+- Average Claim Amount
 
-Several visualizations were generated using Python to understand the data distribution:
+---
 
-Customer age distribution
+## Main Visualizations
 
-Fraud cases distribution
+- Fraud vs Non-Fraud distribution
+- Claims by Age Group
+- Fraud by Incident Severity
+- Claims by Incident Type
+- Claims by State
+- Claim Amount by Fraud Status
 
-Incident severity analysis
+---
 
-Claim amount vs fraud status
+## Interactive Filters
 
-Claims by state
+The dashboard includes slicers for:
 
-Incident type frequency
+- Incident Type
+- State
+- Incident Severity
 
-Dashboard Features
+These filters allow users to explore fraud patterns across different segments of the data.
 
-The Power BI dashboard includes:
+---
 
-Key Performance Indicators (KPIs)
+#  Key Insights
 
-Total Claims
+From the analysis we can observe:
 
-Fraud Cases
+- Approximately **24.7% of claims show fraud indicators**
+- Fraudulent claims tend to have **higher average claim amounts**
+- The most common incident types are:
+  - Single vehicle collisions
+  - Multi-vehicle collisions
+- Most claims occur among customers aged **31–50**
 
-Fraud Rate
+---
 
-Total Claim Amount
+#  Tools & Technologies
 
-Average Claim Amount
+This project was built using:
 
-Main Visualizations
+- **Python**
+- Pandas
+- Matplotlib
+- Seaborn
+- **Power BI**
+- Git
+- GitHub
 
-Fraud vs Non-Fraud distribution
+---
 
-Claims by Age Group
+#  Dashboard Preview
 
-Fraud by Incident Severity
+<img width="1379" height="776" alt="image" src="https://github.com/user-attachments/assets/dfeb8609-d4d1-4366-a20a-e76221733b44" />
 
-Claims by Incident Type
 
-Claims by State
+---
 
-Claim Amount by Fraud Status
+#  Future Improvements
 
-Interactive Filters
+Possible extensions of this project include:
 
-Users can filter the dashboard by:
+- Building a **machine learning model to predict fraud probability**
+- Implementing **feature engineering for risk scoring**
+- Adding **time-series analysis of claims**
+- Deploying the dashboard using **Power BI Service**
 
-Incident Type
+---
 
-State
+#  Author
 
-Incident Severity
+**Oscar Salgado**
 
-Key Insights
+Projects focused on **insurance analytics, fraud detection, and actuarial data analysis**.
 
-Approximately 24.7% of claims show fraud indicators
-
-Fraudulent claims tend to have higher average claim amounts
-
-The most common incidents are:
-
-Single vehicle collisions
-
-Multi-vehicle collisions
-
-The majority of claims occur among customers aged 31–50
-
-Tools & Technologies
-
-Python
-
-Pandas
-
-Matplotlib / Seaborn
-
-Power BI
-
-Git
-
-GitHub
-
-Dashboard Preview
-<img width="1383" height="777" alt="image" src="https://github.com/user-attachments/assets/9dee0b80-b7d4-4731-a67a-7b4b11a24137" />
-Future Improvements
-
-Build a machine learning model to predict fraud probability
-
-Implement feature engineering for risk scoring
-
-Add time-series analysis for claim trends
-
-Author
-
-Oscar Salgado
-
-Data analysis projects focused on insurance risk, fraud detection, and actuarial insights.
-
-GitHub:
+GitHub:  
 https://github.com/osalgador
 
-Project Purpose
+---
 
-This project was developed as part of a data analytics and actuarial portfolio, demonstrating skills in:
+#  Project Purpose
 
-Data cleaning
+This project was developed as part of a **data analytics and actuarial portfolio**, demonstrating skills in:
 
-Exploratory data analysis
-
-Data visualization
-
-Risk analysis in insurance datasets
-
+- Data cleaning
+- Exploratory data analysis
+- Data visualization
+- Insurance risk analysis
+- Fraud detection analytics
