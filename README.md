@@ -40,6 +40,7 @@ insurance-fraud-dashboard
 │   └── dashboard_preview.png
 │
 └── README.md
+
 Data Preparation
 
 The dataset was cleaned using Python (Pandas).
