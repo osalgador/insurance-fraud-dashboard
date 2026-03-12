@@ -23,17 +23,24 @@ The goal of this project is to demonstrate **data analysis and actuarial insight
 #  Project Structure
 insurance-fraud-dashboard
 │
+
 ├── data
+
 │ └── insurance_claims.csv
+
 │
 ├── scripts
+
 │ └── lifeinsurance.py
+
 │
 ├── dashboard
 │ └── insurance_fraud_dashboard.pbix
+
 │
 ├── images
 │ └── dashboard_preview.png
+
 │
 └── README.md
 ---
