@@ -19,33 +19,24 @@ The goal of this project is to demonstrate **data analysis and actuarial insight
 - Build an **interactive Power BI dashboard**
 
 ---
+##  Project Structure
 
-#  Project Structure
+
 insurance-fraud-dashboard
 │
-
 ├── data
-
-│ └── insurance_claims.csv
-
+│ └── insurance_claims.csv # dataset used for analysis
 │
 ├── scripts
-
-│ └── lifeinsurance.py
-
+│ └── lifeinsurance.py # data cleaning and EDA
 │
 ├── dashboard
-│ └── insurance_fraud_dashboard.pbix
-
+│ └── insurance_fraud_dashboard.pbix # Power BI dashboard
 │
 ├── images
-│ └── dashboard_preview.png
-
+│ └── dashboard_preview.png # dashboard screenshot
 │
 └── README.md
----
-
-
 ---
 
 #  Data Preparation
