@@ -1,7 +1,8 @@
 # Insurance Fraud Detection Dashboard
 ---
 
-![Dashboard Preview](/workspaces/insurance-fraud-dashboard/images/Fraud_Dashboard.png)
+![Dashboard Preview](/images/Fraud_Dashboard.png)
+
 ---
 ## Project Overview
 
