@@ -71,7 +71,7 @@ Compares the number of claims between fraudulent and legitimate cases.
 
 # Dashboard Preview
 
-![Dashboard Preview](images/dashboard_preview.png)
+
 
 ---
 
