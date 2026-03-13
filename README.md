@@ -1,6 +1,6 @@
 # Insurance Fraud Detection Dashboard
 ---
-
+## Dashboard preview
 ![Dashboard Preview](images/Fraud_Dashboard.png)
 
 ---
