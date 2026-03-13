@@ -1,5 +1,10 @@
 # Insurance Fraud Detection Dashboard
+---
 
+# Dashboard Preview
+
+![Dashboard](images/Fraud_Dashboard.png)
+---
 ## Project Overview
 
 This project analyzes **insurance claim data** to identify patterns associated with **fraudulent claims**.  
@@ -67,13 +72,7 @@ Highlights geographic distribution of fraud cases and claim activity across stat
 • **Claim Amount by Fraud Status**  
 Compares the number of claims between fraudulent and legitimate cases.
 
----
 
-# Dashboard Preview
-
-
-
----
 
 # Data Preparation
 
