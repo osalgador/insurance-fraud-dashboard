@@ -144,20 +144,28 @@ This project was developed using the following tools:
 
 # Project Structure
  ```
-  insurance-fraud-dashboard │
-  ├── data │
-  └── insurance_claims.csv │
-  ├── scripts │
-  └── lifeinsurance.py │
-  ├── dashboard │
-  └── insurance_fraud_dashboard.pbix │
-  ├── images │
-  └── dashboard_preview.png │
-  └── README.md ```
+insurance-fraud-dashboard
+│
+├── data
+│ ├── insurance_claims.csv
+│ └── insurance_fraud_dashboard.csv
+│
+├── scripts
+│ └── lifeinsurance.py
+│
+├── dashboard
+│ └── Analysis_fraud.pbix
+│
+├── images
+│ └── Fraud_Dashboard.png
+│
+└── README.md
+´´´
  
+
 ---
 
-# Future Improvements
+#  Future Improvements
 
 Possible extensions of this project include:
 
@@ -168,7 +176,7 @@ Possible extensions of this project include:
 
 ---
 
-# Author
+#  Author
 
 **Oscar Salgado**
 
@@ -179,7 +187,7 @@ https://github.com/osalgador
 
 ---
 
-# Project Purpose
+#  Project Purpose
 
 This project was developed as part of a **data analytics and actuarial portfolio**, demonstrating practical skills in:
 
