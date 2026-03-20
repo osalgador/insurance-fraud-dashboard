@@ -215,6 +215,29 @@ The model identified several important drivers of fraud:
 These findings align with real-world insurance risk patterns, where fraud is often associated with **high-value and high-severity claims**.
 
 ---
+# Monte Carlo Simulation for Fraud Risk
+
+To enhance the analysis, a Monte Carlo simulation was implemented to estimate the potential financial impact of fraudulent claims under uncertainty.
+
+### Objective
+
+- Simulate multiple scenarios of total fraud-related losses
+- Estimate expected losses and variability
+- Support risk-based decision making
+
+### Key Results
+
+- **Expected Loss:** ~15 million
+- **Loss Range:** 11M – 18M
+- The distribution follows a near-normal pattern, indicating stable but uncertain outcomes
+
+### Insights
+
+- Fraud generates significant financial exposure
+- There is measurable variability in total losses
+- The simulation allows estimation of potential worst-case scenarios
+
+This approach aligns with actuarial methodologies for risk quantification and financial forecasting.
 ---
 
 # Tools & Technologies
@@ -241,6 +264,7 @@ insurance-fraud-dashboard
 │
 ├── scripts
 │ ├── fraud_model.py
+│ ├── montecarlo_simulation.py
 │ └── lifeinsurance.py
 │
 ├── dashboard
