@@ -125,7 +125,96 @@ The analysis reveals several interesting patterns:
 • Most claims occur among customers aged **31–50 years old**.
 
 • Fraud distribution varies across states, suggesting **possible regional risk patterns**.
+---
 
+# Machine Learning: Fraud Prediction Model
+
+To extend the analysis beyond visualization, a machine learning model was developed to **predict the probability of fraudulent claims**.
+
+---
+
+## Model Approach
+
+The problem was framed as a **binary classification task**, where:
+
+- **0 → Non-Fraud**
+- **1 → Fraud**
+
+The dataset was preprocessed using:
+
+- One-hot encoding for categorical variables
+- Feature engineering (age groups, damage indicators)
+- Train-test split (80/20)
+
+---
+
+## Logistic Regression Model (Final Model)
+
+Logistic Regression was selected as the primary model due to its interpretability and strong performance.
+
+### Model Performance
+
+- **Accuracy:** 76%
+- **ROC-AUC:** 0.726
+- **Fraud Recall:** 65%
+- **Fraud Precision:** 55%
+
+### Interpretation
+
+- The model successfully detects **65% of fraudulent claims**, significantly improving detection compared to baseline approaches.
+- ROC-AUC of **0.726** indicates good discrimination between fraud and non-fraud cases.
+- The model maintains a good balance between precision and recall, which is critical in fraud detection scenarios.
+
+---
+
+## Random Forest Model
+
+A Random Forest model was also evaluated to compare performance.
+
+### Model Performance
+
+- **Accuracy:** 70%
+- **ROC-AUC:** 0.726
+- **Fraud Recall:** 27%
+- **Fraud Precision:** 44%
+
+### Interpretation
+
+Although Random Forest achieved a similar ROC-AUC score, it failed to effectively detect fraudulent cases, capturing only **27% of fraud instances**.
+
+---
+
+## Model Comparison
+
+| Metric | Logistic Regression | Random Forest |
+|--------|------------------|--------------|
+| Accuracy | 76% | 70% |
+| ROC-AUC | 0.726 | 0.726 |
+| Fraud Recall | **65%** | 27% |
+| Fraud Precision | 55% | 44% |
+
+---
+
+## Final Model Selection
+
+Logistic Regression was selected as the final model due to its superior ability to detect fraudulent claims.
+
+In fraud detection, **recall is more important than accuracy**, as failing to detect fraud leads to direct financial loss.
+
+---
+
+## Key Model Insights
+
+The model identified several important drivers of fraud:
+
+- **Severe accidents** significantly increase fraud probability
+- **Higher claim amounts and total damage** are strong fraud indicators
+- **Policy-related variables** (deductibles, limits) influence fraud behavior
+- **Incident characteristics** (type and severity) are key predictors
+
+These findings align with real-world insurance risk patterns, where fraud is often associated with **high-value and high-severity claims**.
+
+---
 ---
 
 # Tools & Technologies
@@ -151,6 +240,7 @@ insurance-fraud-dashboard
 │ └── insurance_fraud_dashboard.csv
 │
 ├── scripts
+│ ├── fraud_model.py
 │ └── lifeinsurance.py
 │
 ├── dashboard
@@ -169,7 +259,6 @@ insurance-fraud-dashboard
 
 Possible extensions of this project include:
 
-- Building a **machine learning model to predict fraud probability**
 - Creating **fraud risk scoring models**
 - Adding **time-series claim analysis**
 - Deploying the dashboard through **Power BI Service**
